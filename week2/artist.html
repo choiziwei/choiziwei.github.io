@@ -7,31 +7,145 @@
     <title>Exercise 3</title>
     <style>
         body {
-            background-color: #F0F8FF;
-            margin: 20px;
+            background-color: #E8F3E8;
+            margin: 50px 100px;
+            font-family: 'Segoe UI', Tahoma;
         }
 
         h1 {
-            color: #2E8B57;
+            color: #1A4D2E;
             text-align: center;
-            font-size: 40px;
+            font-size: 60px;
+            font-family: 'Segoe UI', Tahoma;
+            border-bottom: 3px solid #73C088;
+            width: 100%;
+            padding-bottom: 10px;
         }
 
-        img.photo {
-            gap: 15px;
-            justify-content: center;
+        h2 {
+            color: #1A4D2E;
+            margin-top: 30px;
+        }
+
+        .photos {
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            margin: 20px 0px;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .photos img {
+            width: 32.2%;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            color: #3e4e3f;
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 16px;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        ul {
+            color: #3e4e3f;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a.official {
+            display: block;
+            width: 250px;
+            margin: auto;
+        }
+
+        button {
+            display: block;
+            width: 250px;
+            padding: 15px 20px;
+            margin: auto;
+            background-color: #346739;
+            color: white;
+            border: none;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        div.social-links {
+            display: flex;
+            gap: 20px;
             margin: 20px 0;
-            margin-left: 20px;
-            justify-content: center;
         }
     </style>
 </head>
 
 <body>
-    <h1>Mrs. GREEN APPLE</h1>
-    <img class="photo" src="images/mrs (1).jpg" width="308" alt="Mrs. GREEN APPLE">
-    <img class="photo" src="images/mrs (2).jpg" width="300" alt="Mrs. GREEN APPLE Logo">
-    <img class="photo" src="images/mrs (3).jpg" width="308" alt="Mrs. GREEN APPLE">
+    <div class="card">
+        <h1>Mrs. GREEN APPLE</h1>
+
+        <div class="photos">
+            <img class="photo" src="images/mrs (1).jpg" width="308" alt="Mrs. GREEN APPLE">
+            <img class="photo" src="images/mrs (2).jpg" width="300" alt="Mrs. GREEN APPLE">
+            <img class="photo" src="images/mrs (3).jpg" width="308" alt="Mrs. GREEN APPLE">
+        </div>
+
+        <h2 class="bio">Biography</h2>
+
+        <p>
+            Mrs. GREEN APPLE is a highly acclaimed Japanese rock band formed in Tokyo in 2013. They made their major
+            debut in 2015 and quickly rose to prominence with their vibrant musical style that perfectly blends
+            energetic rock, synth-pop, and orchestral elements. The band is currently composed of three members: Motoki
+            Ohmori (vocals and guitar), Hiroto Wakai (guitar), and Ryoka Fujisawa (keyboards). They are particularly
+            famous for their incredibly catchy melodies and the extraordinary, expressive vocal range of their lead
+            singer, Ohmori. Their lyrics often explore deeply emotional themes of youth, hope, and personal struggles,
+            resonating with a massive audience. After a brief hiatus, they returned in 2022 stronger than ever,
+            releasing multiple chart-topping hits and contributing iconic theme songs to popular anime series and
+            movies. Today, Mrs. GREEN APPLE is recognized as one of the most prominent and dynamic acts in the modern
+            Japanese music scene.
+        </p>
+
+        <h2 class="songs">Favorite Songs</h2>
+
+        <ul><b>
+                <li>Que Sera Sera「ケセラセラ」</li>
+                <li>Seeds of Delight「慶びの種」</li>
+                <li>A Puriori 「ア・プリオリ」</li>
+            </b>
+        </ul>
+
+        <h2>Connect with them</h2>
+
+        <div class="social-links">
+            <a href="https://x.com/AORINGOHUZIN" target="_blank">
+                <img src="images/twitter.png" width="50px" alt="twitter logo">
+            </a>
+            <a href="https://www.instagram.com/mgaband/" target="_blank">
+                <img src="images/instagram.png" width="50px" alt="instagram logo">
+            </a>
+            <a href="https://www.youtube.com/@MrsGREENAPPLE_Official" target="_blank">
+                <img src="images/youtube.png" width="50px" alt="youtube logo">
+            </a>
+        </div>
+
+        <a class="official" href="https://mrsgreenapple.com/" target="_blank">
+            <button><b>Visit Official Website</b></button>
+        </a>
+
+    </div>
 </body>
+
 
 </html>
