@@ -9,32 +9,84 @@
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
         body {
-            margin: 50px;
+            margin: 0px 100px;
             font-family: "Space Grotesk", sans-serif;
         }
 
         .upper {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
-            gap: 50px;
+            margin-top: 51px;
+            margin-bottom: 70px;
         }
 
         .positivus {
             gap: 90px;
         }
 
-        .spreaker {
+        .about {
             display: flex;
-            align-items: end;
-            width: 40px;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        .request {
+            border: 1px solid #191A23;
+            border-radius: 14px;
+            padding: 20px 35px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 70px;
+            gap: 50px;
+        }
+
+        .word {
+            align-items: left;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 500;
+            max-width: 531px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            max-width: 498px;
+        }
+
+        button {
+            color: #ffffff;
+            background-color: #191A23;
+            padding: 20px 35px;
+            border-radius: 14px;
+            border: none;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 20px;
+            margin-top: 35px;
+        }
+
+        .speaker {
+            justify-content: flex-end;
+            height: 515px;
         }
 
         .company {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: end;
             gap: 15px;
+            margin-bottom: 20px;
             filter: grayscale(100%);
         }
     </style>
@@ -44,32 +96,45 @@
     <div class="container">
 
 
-        <div class="upper bar">
+        <div class="upper">
 
-            <div class="positivus"><img src="images/positivus.png" alt="positivus logo"></div>
+            <div class="positivus">
+                <img src="images/positivus.png" alt="positivus logo">
+            </div>
 
-            <div>About Us</div>
-            <div>Services</div>
-            <div>Use Cases</div>
-            <div>Pricing</div>
-            <div>Blog</div>
-            <div>Request a quote</div>
+            <div class="about">
+                <div>About Us</div>
+                <div>Services</div>
+                <div>Use Cases</div>
+                <div>Pricing</div>
+                <div>Blog</div>
+                <div class="request">Request a quote</div>
 
-
+            </div>
         </div>
 
-        <div class="speaker">
-            <img src="images/speaker.png">
+        <div class="header">
+            <div class="word">
+                <div>
+                    <h1>Navigating the digital landscape for success</h1>
+                </div>
+
+                <div>
+                    <p>
+                        Our digital marketing agency helps businesses grow and succeed online through a range of
+                        services
+                        including
+                        SEO, PPC, social media marketing, and content creation.
+                    </p>
+                </div>
+
+                <div><button>Book a consultation</button></div>
+            </div>
+
+
+            <div class="speaker"><img src="images/speaker.png"></div>
+
         </div>
-
-        <h1>Navigating the digital landscape for success</h1>
-
-        <p>
-            Our digital marketing agency helps businesses grow and succeed online through a range of services
-            including
-            SEO, PPC, social media marketing, and content creation.
-        </p>
-        <button>Book a consultation</button>
 
         <div class="company">
             <div><img src="images/amazon.png" alt="Amazon logo"></div>
