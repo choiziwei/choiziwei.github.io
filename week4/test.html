@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(249, 157, 172);
+        }
+
+        .container {
+            display: flex
+        }
+
+        .child {
+            width: 50%
+        }
+
+        /*tablet*/
+        @media screen and (max-width: 700px) {
+            body {
+                background-color: rgb(154, 229, 244);
+            }
+
+            .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .child {
+                width: 100%;
+            }
+
+            h1 {
+                display: none;
+            }
+
+            p {
+                border-bottom: 2px solid rgb(249, 157, 172);
+            }
+        }
+
+        /*phone*/
+        @media screen and (max-width: 500px) {
+            body {
+                background-color: rgb(121, 235, 214);
+            }
+
+            .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Resize the browser window to see the effect!</h1>
+
+    <p>The media query is applied if the media type is screen, and the viewport width is 480px or more.</p>
+    <div class="container">
+        <div class="child">
+            1cccccccccccccccccffffffffffffffffffffcccccccccccccccccccccccccccc
+        </div>
+        <div class="child">
+            2cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+        </div>
+    </div>
+
+</body>
+
+</html>
