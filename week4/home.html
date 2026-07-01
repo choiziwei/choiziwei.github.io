@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+        body {
+            margin: 0px 100px;
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        .upper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 51px;
+            margin-bottom: 70px;
+        }
+
+        .positivus {
+            gap: 90px;
+        }
+
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        .request {
+            border: 1px solid #191A23;
+            border-radius: 14px;
+            padding: 20px 35px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 70px;
+            gap: 50px;
+        }
+
+        .word {
+            align-items: left;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 500;
+            max-width: 531px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            max-width: 498px;
+        }
+
+        button {
+            color: #ffffff;
+            background-color: #191A23;
+            padding: 20px 35px;
+            border-radius: 14px;
+            border: none;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 20px;
+            margin-top: 35px;
+        }
+
+        .speaker {
+            display: flex;
+            justify-content: flex-end;
+            height: 515px;
+        }
+
+        .company {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 15px;
+            filter: grayscale(100%);
+        }
+
+        .services-header {
+            display: flex;
+            align-items: center;
+            margin-top: 149px;
+            gap: 40px;
+        }
+
+        .services-header h2 {
+            font-size: 40px;
+            font-weight: 500;
+            font-style: medium;
+            background-color: #B9FF66;
+            padding: 0 10px;
+            border-radius: 5px;
+        }
+
+        .services-header p {
+            font-size: 18px;
+            font-weight: 400;
+            max-width: 580px;
+        }
+
+        .service-grids {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            box-shadow: 0px 5px 0px #191A23;
+            border: 1px solid #191A23;
+            border-radius: 45px;
+            padding: 50px;
+        }
+
+        .service-cards h3 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .green-arrow,
+        .black-arrow {
+            display: flex;
+            justify-content: center;
+            width: 41px;
+            height: 41px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="upper">
+
+            <div class="positivus">
+                <img src="images/positivus.png" alt="positivus logo">
+            </div>
+
+            <div class="about">
+                <div>About Us</div>
+                <div>Services</div>
+                <div>Use Cases</div>
+                <div>Pricing</div>
+                <div>Blog</div>
+                <div class="request">Request a quote</div>
+
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="word">
+                <div>
+                    <h1>Navigating the digital landscape for success</h1>
+                </div>
+
+                <div>
+                    <p>
+                        Our digital marketing agency helps businesses grow and succeed online through a range of
+                        services
+                        including
+                        SEO, PPC, social media marketing, and content creation.
+                    </p>
+                </div>
+
+                <div><button>Book a consultation</button></div>
+            </div>
+
+
+            <div class="speaker"><img src="images/speaker.png"></div>
+
+        </div>
+
+        <div class="company">
+            <div><img src="images/amazon.png" alt="Amazon logo"></div>
+            <div><img src="images/dribbble.png" alt="Dribbble logo"></div>
+            <div><img src="images/hubspot.png" alt="Hubspot logo"></div>
+            <div><img src="images/notion.png" alt="Notion logo"></div>
+            <div><img src="images/netflix.png" alt="Netflix logo"></div>
+            <div><img src="images/zoom.png" alt="Zoom logo"></div>
+        </div>
+
+        <div class="services">
+            <div class="services-header">
+                <div>
+                    <h2>Services</h2>
+                </div>
+
+                <div>
+                    <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed
+                        online.These services include:</p>
+                </div>
+            </div>
+
+            <div class="service-grids">
+
+                <div class="service-cards card-white">
+                    <div class="service-text">
+                        <h3><span style="background-color: #B9FF66;">Search engine optimization</span></h3>
+
+                        <div class="green-arrow"><img src="images/green arrow.png" alt="green arrow image"></div>
+                        <div>
+                            <p>Learn More</p>
+                        </div>
+                    </div>
+
+                    <img src="images/search engine.png" alt="search engine image">
+                </div>
+
+                <div class="service-cards card-green">
+                    <div class="service-text">
+                        <h3><span style="background-color: #B9FF66;">Pay-per-click advertising</span></h3>
+
+                        <div class="green-arrow"><img src="images/green arrow.png" alt="green arrow image"></div>
+                        <p>Learn More</p>
+                    </div>
+                    <img src="images/pay per click.png" alt="pay per click image">
+                </div>
+
+                <div class="service-cards card-black">
+                    <div class="service-text">
+                        <h3>Social media Marketing</h3>
+                        <div class="black-arrow"><img src="images/black arrow.png" alt="black arrow image"></div>
+                        <p>Learn More</p>
+                    </div>
+                    <img src="images/social media.png" alt="social media image">
+                </div>
+
+                <div class="service-cards card-white">
+                    <div class="service-text">
+                        <h3>Email Marketing</h3>
+                        <div class="green-arrow"><img src="images/green arrow.png" alt="green arrow image"></div>
+                        <p>Learn More</p>
+                    </div>
+                    <img src="images/email marketing.png" alt="email marketing image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
