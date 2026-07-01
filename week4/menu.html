@@ -17,14 +17,23 @@
 
         .home {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             gap: 30px;
+        }
+
+        .services {
+            color: orangered
         }
 
         .right {
             display: flex;
             gap: 20px;
             align-items: center;
+            justify-content: flex-end;
+        }
+
+        .phone-number {
+            font-weight: bold;
         }
 
         button {
@@ -33,14 +42,45 @@
             border: none;
             border-radius: 10px;
             padding: 10px 20px;
+            margin-right: 20px;
         }
 
-        img {
-            max-width: 20%;
-        }
+
 
         @media screen and (max-width: 1536px) {
             .hamburger {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1100px) {
+            .hamburger {
+                display: flex;
+            }
+
+            button {
+                display: none;
+            }
+
+            .home {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 630px) {
+            button {
+                display: none;
+            }
+
+            .home {
+                display: none;
+            }
+
+            .phone {
+                display: none;
+            }
+
+            .phone-number {
                 display: none;
             }
         }
@@ -50,23 +90,23 @@
 <body>
     <div class="container">
 
-        <img src="images/elementra2.png" width="100%">
+        <img src="images/elementra2.png" alt="Elementra Logo" height="60px">
 
         <div class="home">
             <div>Home</div>
-            <div>Services</div>
+            <div class="services">Services</div>
             <div>Work</div>
             <div>Project Details</div>
             <div>Contact</div>
         </div>
 
         <div class="right">
-            <img src="images/phone icon.png" width="50">
-            <div>555-123-4567</div>
+            <div class="phone"><img src="images/phone icon.png" alt="Phone Icon" height="50px"></div>
+            <div class="phone-number">555-123-4567</div>
             <div><button>Contact</button></div>
-            <div class="hamburger"><img src="images/hamburger.png" width="100%">
-            </div>
+            <div class="hamburger"><img src="images/hamburger.png" alt="Hamburger Menu Icon" height="50px"></div>
         </div>
+    </div>
     </div>
 </body>
 
