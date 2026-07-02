@@ -100,23 +100,30 @@
         .services-header h2 {
             font-size: 40px;
             font-weight: 500;
-            font-style: medium;
             background-color: #B9FF66;
             padding: 0 10px;
             border-radius: 5px;
+            margin: 0;
         }
 
         .services-header p {
             font-size: 18px;
             font-weight: 400;
             max-width: 580px;
+            margin: 0;
         }
 
         .service-grids {
             display: flex;
             flex-wrap: wrap;
-            gap: 30px;
-            margin-top: 30px;
+            margin: 80px -20px;
+        }
+
+        .card-wrapper {
+            flex: 0 0 50%;
+            box-sizing: border-box;
+            padding: 0 20px;
+            margin-bottom: 40px;
         }
 
         .service-cards {
@@ -128,19 +135,83 @@
             border: 1px solid #191A23;
             border-radius: 45px;
             padding: 50px;
+            height: 310px;
+            box-sizing: border-box;
+        }
+
+        .card-white {
+            background-color: #F3F3F3;
+        }
+
+        .card-green {
+            background-color: #B9FF66;
+        }
+
+        .card-black {
+            background-color: #191A23;
+        }
+
+        .service-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100%;
+            width: 100%;
         }
 
         .service-cards h3 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 7px;
             font-size: 30px;
             font-weight: 500;
+            margin: 0;
         }
 
-        .green-arrow,
-        .black-arrow {
-            display: flex;
-            justify-content: center;
+        .service-cards img {
+            max-width: 40%;
+            height: auto;
+        }
+
+        .title {
+            padding: 3px 7px;
+            border-radius: 7px;
+        }
+
+        .arrow {
             width: 41px;
             height: 41px;
+        }
+
+        .p-black {
+            color: #ffffff;
+        }
+
+        .learn-more {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+            margin-top: auto;
+        }
+
+        .learn-more p {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .proposal {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #F3F3F3;
+        }
+
+        .proposal-text {
+            font-size: 30px;
         }
     </style>
 </head>
@@ -205,56 +276,134 @@
 
                 <div>
                     <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed
-                        online.These services include:</p>
+                        online. These services include:</p>
                 </div>
             </div>
 
             <div class="service-grids">
 
-                <div class="service-cards card-white">
-                    <div class="service-text">
-                        <h3><span style="background-color: #B9FF66;">Search engine optimization</span></h3>
+                <div class="card-wrapper">
+                    <div class="service-cards card-white">
+                        <div class="service-text">
+                            <h3><span class="title" style="background-color: #B9FF66">Search
+                                    Engine</span>
+                            </h3>
+                            <h3><span class="title" style="background-color: #B9FF66">optimization</span>
+                            </h3>
 
-                        <div class="green-arrow"><img src="images/green arrow.png" alt="green arrow image"></div>
-                        <div>
-                            <p>Learn More</p>
+                            <div class="learn-more">
+                                <img src="images/green arrow.png" alt="green arrow image">
+                                <p>Learn More</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <img src="images/search engine.png" alt="search engine image">
+                        <img src="images/search engine.png" alt="search engine image">
+                    </div>
                 </div>
 
-                <div class="service-cards card-green">
-                    <div class="service-text">
-                        <h3><span style="background-color: #B9FF66;">Pay-per-click advertising</span></h3>
+                <div class="card-wrapper">
+                    <div class="service-cards card-green">
+                        <div class="service-text">
+                            <h3><span class="title" style="background-color: #ffffff">Pay-per-click</span>
+                            </h3>
+                            <h3><span class="title" style="background-color: #ffffff">advertising</span>
+                            </h3>
 
-                        <div class="green-arrow"><img src="images/green arrow.png" alt="green arrow image"></div>
-                        <p>Learn More</p>
+                            <div class="learn-more">
+                                <img src="images/green arrow.png" alt="green arrow image">
+                                <p>Learn More</p>
+                            </div>
+                        </div>
+
+                        <img src="images/pay per click.png" alt="pay-per-click image">
                     </div>
-                    <img src="images/pay per click.png" alt="pay per click image">
                 </div>
 
-                <div class="service-cards card-black">
-                    <div class="service-text">
-                        <h3>Social media Marketing</h3>
-                        <div class="black-arrow"><img src="images/black arrow.png" alt="black arrow image"></div>
-                        <p>Learn More</p>
+                <div class="card-wrapper">
+                    <div class="service-cards card-black">
+                        <div class="service-text">
+                            <h3><span class="title" style="background-color: #ffffff">Social Media</span>
+                            </h3>
+                            <h3><span class="title" style="background-color: #ffffff">Marketing</span>
+                            </h3>
+
+                            <div class="learn-more">
+                                <img src="images/black arrow.png" alt="black arrow image">
+                                <p class="p-black">Learn More</p>
+                            </div>
+                        </div>
+
+                        <img src="images/social media.png" alt="social media marketing image">
                     </div>
-                    <img src="images/social media.png" alt="social media image">
                 </div>
 
-                <div class="service-cards card-white">
-                    <div class="service-text">
-                        <h3>Email Marketing</h3>
-                        <div class="green-arrow"><img src="images/green arrow.png" alt="green arrow image"></div>
-                        <p>Learn More</p>
+                <div class="card-wrapper">
+                    <div class="service-cards card-white">
+                        <div class="service-text">
+                            <h3><span class="title" style="background-color: #B9FF66">E-mail</span>
+                            </h3>
+                            <h3><span class="title" style="background-color: #B9FF66">Marketing</span>
+                            </h3>
+
+                            <div class="learn-more">
+                                <img src="images/green arrow.png" alt="green arrow image">
+                                <p>Learn More</p>
+                            </div>
+                        </div>
+
+                        <img src="images/email marketing.png" alt="email marketing image">
                     </div>
-                    <img src="images/email marketing.png" alt="email marketing image">
+                </div>
+
+                <div class="card-wrapper">
+                    <div class="service-cards card-green">
+                        <div class="service-text">
+                            <h3><span class="title" style="background-color: #ffffff">Content</span>
+                            </h3>
+                            <h3><span class="title" style="background-color: #ffffff">Creation</span>
+                            </h3>
+
+                            <div class="learn-more">
+                                <img src="images/green arrow.png" alt="green arrow image">
+                                <p>Learn More</p>
+                            </div>
+                        </div>
+
+                        <img src="images/pay per click.png" alt="pay-per-click image">
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="service-cards card-black">
+                        <div class="service-text">
+                            <h3><span class="title" style="background-color: #ffffff">Analytics and</span>
+                            </h3>
+                            <h3><span class="title" style="background-color: #ffffff">Tracking</span>
+                            </h3>
+
+                            <div class="learn-more">
+                                <img src="images/black arrow.png" alt="black arrow image">
+                                <p class="p-black">Learn More</p>
+                            </div>
+                        </div>
+
+                        <img src="images/analytics.png" alt="analytics and tracking image">
+                    </div>
                 </div>
             </div>
+        </div>
 
+        <div class="propasal">
+            <div class="proposal-text">
+                <h3>Let's make things happen</h3>
+                <p>Contact us today to learn more about how our digital marketing services can help your business grow
+                    and
+                    succeed online.</p>
+                <button>Get your free proposal</button>
+            </div>
+            <div><img src="images/proposal.png" alt="free proposal image"></div>
         </div>
     </div>
+
 </body>
 
 </html>
