@@ -23,6 +23,7 @@
 
         .positivus {
             gap: 90px;
+            max-width: 100%;
         }
 
         .about {
@@ -40,6 +41,10 @@
             padding: 20px 35px;
         }
 
+        .hamburger {
+            display: none;
+        }
+
         .header {
             display: flex;
             justify-content: space-between;
@@ -48,7 +53,12 @@
             gap: 50px;
         }
 
+        .speaker2 {
+            display: none;
+        }
+
         .word {
+            display: flex;
             align-items: left;
             flex-direction: column;
         }
@@ -79,15 +89,17 @@
         .speaker {
             display: flex;
             justify-content: flex-end;
-            height: 515px;
+            height: 100%;
         }
 
         .company {
             display: flex;
-            justify-content: space-between;
-            align-items: end;
-            gap: 15px;
+            justify-content: space-around;
+            align-items: center;
+            gap: 40px 15px;
+            height: 100%;
             filter: grayscale(100%);
+            flex-wrap: wrap;
         }
 
         .services-header {
@@ -136,6 +148,7 @@
             border-radius: 45px;
             padding: 50px;
             height: 310px;
+            width: 100%;
             box-sizing: border-box;
         }
 
@@ -170,8 +183,8 @@
             margin: 0;
         }
 
-        .service-cards img {
-            max-width: 40%;
+        .service-cards>img {
+            max-width: 45%;
             height: auto;
         }
 
@@ -185,16 +198,16 @@
             height: 41px;
         }
 
-        .p-black {
-            color: #ffffff;
-        }
-
         .learn-more {
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 15px;
             margin-top: auto;
+        }
+
+        .learn-more img {
+            width: 41px;
         }
 
         .learn-more p {
@@ -226,12 +239,145 @@
             margin-bottom: 60px;
         }
 
+        .proposal2 {
+            display: none;
+        }
+
         .proposal img {
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: visible;
             height: 100%;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1245px) {
+            .request {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            body {
+                margin: 0px 50px;
+            }
+
+            .about {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                max-width: 40%;
+            }
+
+            .company img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .header {
+                flex-direction: column;
+            }
+
+            .speaker {
+                display: none;
+            }
+
+            .speaker2 {
+                display: block;
+            }
+
+            .card-wrapper {
+                flex: 0 0 100%;
+            }
+
+            .service-cards h3 {
+                font-size: 30px;
+            }
+
+            .service-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+            }
+
+            .service-cards {
+                height: 310px;
+                align-items: stretch;
+            }
+
+            .learn-more p {
+                display: none;
+            }
+
+            .learn-more img {
+                width: 100%;
+            }
+
+            .proposal img {
+                display: none;
+            }
+
+            .proposal-text {
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            body {
+                margin: 0 40px;
+            }
+
+            .upper {
+                margin: 10px 0;
+            }
+
+            .services-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .service-cards {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding: 35px;
+                height: 280px;
+                width: 100%;
+            }
+
+            .service-cards h3 {
+                font-size: 24px;
+            }
+
+            .service-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+            }
+
+            .proposal-text {
+                flex-direction: column;
+                text-align: start;
+                padding-right: 60px;
+                margin: 0;
+            }
+
+            .proposal1 {
+                display: none;
+            }
+
+            .proposal2 {
+                display: flex;
+                margin-top: 20px;
+            }
         }
     </style>
 </head>
@@ -254,6 +400,7 @@
                 <div class="request">Request a quote</div>
 
             </div>
+            <div class="hamburger"><img src="images/hamburger.png" alt="hamburger icon" width="10%"></div>
         </div>
 
         <div class="header">
@@ -261,6 +408,8 @@
                 <div>
                     <h1>Navigating the digital landscape for success</h1>
                 </div>
+
+                <div class="speaker2"><img src="images/speaker.png" width="100%" height="100%"></div>
 
                 <div>
                     <p>
@@ -275,7 +424,7 @@
             </div>
 
 
-            <div class="speaker"><img src="images/speaker.png"></div>
+            <div class="speaker"><img src="images/speaker.png" width="100%" height="100%"></div>
 
         </div>
 
@@ -285,7 +434,7 @@
             <div><img src="images/hubspot.png" alt="Hubspot logo"></div>
             <div><img src="images/notion.png" alt="Notion logo"></div>
             <div><img src="images/netflix.png" alt="Netflix logo"></div>
-            <div><img src="images/zoom.png" alt="Zoom logo"></div>
+            <div><img src="images/zoom.png" alt="Zoom logo" width="140px"></div>
         </div>
 
         <div class="services">
@@ -349,7 +498,7 @@
 
                             <div class="learn-more">
                                 <img src="images/black arrow.png" alt="black arrow image">
-                                <p class="p-black">Learn More</p>
+                                <p><span style="color: #ffffff;">Learn More</span></p>
                             </div>
                         </div>
 
@@ -402,7 +551,7 @@
 
                             <div class="learn-more">
                                 <img src="images/black arrow.png" alt="black arrow image">
-                                <p class="p-black">Learn More</p>
+                                <p><span style="color: #ffffff;">Learn More</span></p>
                             </div>
                         </div>
 
@@ -418,7 +567,8 @@
                 <p>Contact us today to learn more about how our digital marketing services can help your business grow
                     and
                     succeed online.</p>
-                <button>Get your free proposal</button>
+                <button class="proposal1">Get your free proposal</button>
+                <button class="proposal2">Get your proposal</button>
             </div>
             <div>
                 <img src="images/proposal.png" alt="free proposal image">
