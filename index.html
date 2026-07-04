@@ -5,47 +5,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+        body {
+            font-family: "Doto";
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            margin: 30px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: bisque;
+            padding: 10px 30px;
+        }
+
+        .logo img {
+            width: 35px;
+        }
+
+        .logo {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .intro img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .weekly {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            display: block;
+            gap: 10px;
+            margin: 10px;
+            background-color: bisque;
+            border-radius: 20px;
+            width: 400px;
+            height: 200px;
+            padding: 20px;
+        }
+
+        .title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid #494949;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .title h2 {
+            margin: 30px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="header">
-        <img src="images/logo.png" width="100px" alt="logo">
+        <div><img src="images/logo1.png" width="100px" alt="logo"></div>
+        <div class="logo">
+            <a href="https://x.com/ChoiZiWei1" target="_blank">
+                <img src="images/twitter.png" alt="twitter logo">
+            </a>
 
-        <a href="https://x.com/ChoiZiWei1" target="_blank">
-            <img class="logo" src="images/twitter.png" alt="twitter logo">
-        </a>
+            <a href="https://www.instagram.com/runa_no_uta?igsh=d2M4bzVsZDVnOTN1" target="_blank">
+                <img src="images/instagram.png" alt="instagram logo">
+            </a>
 
-        <a href="https://www.instagram.com/runa_no_uta?igsh=d2M4bzVsZDVnOTN1" target="_blank">
-            <img class="logo" src="images/instagram.png" alt="instagram logo">
-        </a>
-
-        <a href="https://github.com/choiziwei" targrt="_blank">
-            <img class="logo" src="images/github.png" alt="github logo">
-        </a>
+            <a href="https://github.com/choiziwei" targrt="_blank">
+                <img src="images/github.png" alt="github logo">
+            </a>
+        </div>
     </div>
     <div class="container">
-        <img src="images/czw.jpg" width="200px" alt="profile">
-        <h1>Choi Zi Wei</h1>
-        <h2>Web Publishing</h2>
-        <p>Hello! I'm Choi Zi Wei, an video editor. I love to edit video and reading books. Welcoome to my personal
-            pages.</p>
+        <div class="intro">
+            <img src="images/czw.jpg" width="200px" alt="profile">
+            <h1>Choi Zi Wei</h1>
+            <h2>Web Publishing</h2>
+            <p>Hello! I'm Choi Zi Wei, an video editor. I love to edit video and reading books. Welcoome to my personal
+                pages.</p>
+        </div>
+        <div class="weekly">
+            <div class="week2 card">
+                <div class="title">
+                    <img src="images/check-mark.png" alt="check-mark.png" width="30px">
+                    <h2>Week 2</h2>
+                </div>
+                <div>
+                    <h4>Exercise 1</h4>
+                    <h4>Exercise 2</h4>
+                </div>
+            </div>
+
+            <div class=" week3 card">
+                <div class="title">
+                    <img src="images/check-mark.png" alt="check-mark.png" width="30px">
+                    <h2>Week 3</h2>
+                </div>
+                <div>
+                    <h4>Exercise 1</h4>
+                    <h4>Exercise 2</h4>
+                </div>
+            </div>
+
+            <div class="week4 card">
+                <div class="title">
+                    <img src="images/check-mark.png" alt="check-mark.png" width="30px">
+                    <h2>Week 4</h2>
+                </div>
+                <div>
+                    <h4>Exercise 1</h4>
+                    <h4>Exercise 2</h4>
+                </div>
+            </div>
+            <div class="week5 card">
+                <div class="title">
+                    <img src="images/check-mark.png" alt="check-mark.png" width="30px">
+                    <h2>Week 5</h2>
+                </div>
+                <div>
+                    <h4>Exercise 1</h4>
+                    <h4>Exercise 2</h4>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
-        <img src="images/logo.png" width="100px" alt="logo">
+        <div class="logo">
+            <a href="https://x.com/ChoiZiWei1" target="_blank">
+                <img src="images/twitter.png" alt="twitter logo">
+            </a>
 
-        <a href="https://x.com/ChoiZiWei1" target="_blank">
-            <img class="logo" src="images/twitter.png" alt="twitter logo">
-        </a>
+            <a href="https://www.instagram.com/runa_no_uta?igsh=d2M4bzVsZDVnOTN1" target="_blank">
+                <img src="images/instagram.png" alt="instagram logo">
+            </a>
 
-        <a href="https://www.instagram.com/runa_no_uta?igsh=d2M4bzVsZDVnOTN1" target="_blank">
-            <img class="logo" src="images/instagram.png" alt="instagram logo">
-        </a>
-
-        <a href="https://github.com/choiziwei" targrt="_blank">
-            <img class="logo" src="images/github.png" alt="github logo">
-        </a>
+            <a href="https://github.com/choiziwei" targrt="_blank">
+                <img src="images/github.png" alt="github logo">
+            </a>
+        </div>
         <p>@2026 Choi Zi Wei. All rights reserved.</p>
+
     </div>
 
 </body>
