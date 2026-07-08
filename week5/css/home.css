@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    margin: 0px 100px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 51px;
+    margin-bottom: 70px;
+}
+
+.positivus {
+    gap: 90px;
+    max-width: 100%;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.request {
+    border: 1px solid #191A23;
+    border-radius: 14px;
+    padding: 20px 35px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 70px;
+    gap: 50px;
+}
+
+.speaker2 {
+    display: none;
+}
+
+.word {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+    max-width: 531px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 498px;
+}
+
+button {
+    color: #ffffff;
+    background-color: #191A23;
+    padding: 20px 35px;
+    border-radius: 14px;
+    border: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+.speaker {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.company {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px 15px;
+    height: 100%;
+    filter: grayscale(100%);
+    flex-wrap: wrap;
+}
+
+.services-header {
+    display: flex;
+    align-items: center;
+    margin-top: 149px;
+    gap: 40px;
+}
+
+.services-header h2 {
+    font-size: 40px;
+    font-weight: 500;
+    background-color: #B9FF66;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.services-header p {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 580px;
+    margin: 0;
+}
+
+.service-grids {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px -20px;
+}
+
+.card-wrapper {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0px 5px 0px #191A23;
+    border: 1px solid #191A23;
+    border-radius: 45px;
+    padding: 50px;
+    height: 310px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card-white {
+    background-color: #F3F3F3;
+}
+
+.card-green {
+    background-color: #B9FF66;
+}
+
+.card-black {
+    background-color: #191A23;
+}
+
+.service-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.service-cards h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.service-cards>img {
+    max-width: 45%;
+    height: auto;
+}
+
+.title {
+    padding: 3px 7px;
+    border-radius: 7px;
+}
+
+.arrow {
+    width: 41px;
+    height: 41px;
+}
+
+.learn-more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+}
+
+.learn-more img {
+    width: 41px;
+}
+
+.learn-more p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.proposal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    padding-left: 60px;
+    height: 347px;
+}
+
+.proposal-text h3 {
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+.proposal-text p {
+    font-size: 18px;
+}
+
+.proposal-text button {
+    margin-bottom: 60px;
+}
+
+.proposal2 {
+    display: none;
+}
+
+.proposal img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1245px) {
+    .request {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        margin: 0px 50px;
+    }
+
+    .about {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        max-width: 40%;
+    }
+
+    .company img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .speaker {
+        display: none;
+    }
+
+    .speaker2 {
+        display: block;
+    }
+
+    .card-wrapper {
+        flex: 0 0 100%;
+    }
+
+    .service-cards h3 {
+        font-size: 30px;
+    }
+
+    .service-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .service-cards {
+        height: 310px;
+        align-items: stretch;
+    }
+
+    .learn-more p {
+        display: none;
+    }
+
+    .learn-more img {
+        width: 100%;
+    }
+
+    .proposal img {
+        display: none;
+    }
+
+    .proposal-text {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin: 0 40px;
+    }
+
+    .upper {
+        margin: 10px 0;
+    }
+
+    .services-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 35px;
+        height: 280px;
+        width: 100%;
+    }
+
+    .service-cards h3 {
+        font-size: 24px;
+    }
+
+    .service-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .proposal-text {
+        flex-direction: column;
+        text-align: start;
+        padding-right: 60px;
+        margin: 0;
+    }
+
+    .proposal1 {
+        display: none;
+    }
+
+    .proposal2 {
+        display: flex;
+        margin-top: 20px;
+    }
+}
