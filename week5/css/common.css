@@ -21,6 +21,30 @@ body {
     margin: 0px 100px;
 }
 
+/*一樣的title style*/
+.services-header {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    gap: 40px;
+}
+
+.services-header h2 {
+    font-size: 40px;
+    font-weight: 500;
+    background-color: var(--color-green);
+    padding: 0 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.services-header p {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 580px;
+    margin: 0;
+}
+
 .upper {
     display: flex;
     justify-content: space-between;
