@@ -24,6 +24,10 @@ h1 {
     max-width: 531px;
 }
 
+h3 {
+    font-size: 30px;
+}
+
 p {
     font-size: 20px;
     font-weight: 400;
@@ -85,7 +89,7 @@ button {
 }
 
 .card-white {
-    background-color: var(--color-light);
+    background-color: var(--color-grey);
 }
 
 .card-green {
@@ -152,7 +156,7 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--color-light);
+    background-color: var(--color-grey);
     border-radius: 45px;
     padding-left: 60px;
     height: 347px;
@@ -202,6 +206,57 @@ button {
 
 .case-study-text:last-child {
     border-right: none;
+}
+
+.wp-01,
+.wp-02 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wp-01 {
+    border-bottom: 1px solid #000000;
+}
+
+.wp-01a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.wp-02a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.wp-01a h1,
+.wp-02a h1 {
+    margin: 0;
+}
+
+.wp-01a h3,
+.wp-02a h3 {
+    margin: 0;
+}
+
+.working-process {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0px 5px 0px var(--color-dark);
+    border: 1px solid var(--color-dark);
+    border-radius: 45px;
+    padding: 41px 60px;
+    margin-top: 80px;
+}
+
+.working-process p {
+    max-width: none;
 }
 
 @media screen and (max-width: 1245px) {
