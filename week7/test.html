@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .submenu {
+            opacity: 0;
+            /* make submenu not visible */
+            position: absolute;
+            /*不會擴大位置*/
+            pointer-events: none;
+            /* make the submenu not hoverable or clickable */
+            transition: all 0.5s;
+            /* transition effect */
+        }
+
+        .submenu a {
+            display: block;
+            /* make second link to next line */
+            padding: 5px;
+        }
+
+        .has-submenu>a::after {
+            content: "⇂";
+            margin-left: 2px;
+        }
+
+        .has-submenu:hover>.submenu {
+            opacity: 1;
+            /* visible when hover menu item */
+            pointer-events: auto;
+            /* make the submenu hoverable/clickable again */
+        }
+
+        div.relative {
+            position: relative;
+            width: 50%;
+            height: 200px;
+            margin: auto;
+            border: 3px solid red;
+        }
+
+        .box1 {
+            position: absolute;
+            width: 200px;
+            top: 20px;
+            right: -80px;
+            border: 3px solid blue;
+        }
+
+        .box2 {
+            position: absolute;
+            width: 200px;
+            height: 50px;
+            bottom: 20px;
+            left: -80px;
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <div class="has-submenu">
+            <a href="#">About</a>
+            <div class="submenu">
+
+                <a href="#">Our Mission</a>
+                <a href="#">Our CEO</a>
+            </div>
+        </div>
+        <div class="has-submenu">
+            <a href="#">Services</a>
+            <div class="submenu">
+                <a href="#">Web Development</a>
+                <a href="#">App Development</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative">
+        <div class="box1"> This is nnnnnnnnnn</div>
+        <div class="box2"> This 222222222</div>
+    </div>
+</body>
+
+</html>
