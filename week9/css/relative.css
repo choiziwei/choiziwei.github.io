@@ -23,6 +23,10 @@
             font-weight: 500;
         }
 
+        p {
+            margin: 20px;
+        }
+
         .heading {
             text-align: center;
             margin: 30px auto;
@@ -58,4 +62,19 @@
 
         .readmore {
             color: var(--color-text);
+        }
+
+        @media screen and (max-width: 500px) {
+            p {
+                margin: 20px;
+                font-size: 14px;
+            }
+
+            img {
+                width: 400px;
+            }
+
+            .relative {
+                width: 300px;
+            }
         }
