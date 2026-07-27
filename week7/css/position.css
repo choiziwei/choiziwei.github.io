@@ -1,0 +1,61 @@
+ :root {
+     --font-main: "Roboto", sans-serif;
+     --color-green: #d0f500;
+     --color-blue: #010c88;
+     --color-light: white;
+     --color-text: black;
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     background-color: var(--color-blue);
+     font-family: var(--font-main);
+ }
+
+ h1 {
+     font-size: 35px;
+ }
+
+ .image-card-container {
+     position: relative;
+     width: 50%;
+     margin-top: 50px;
+     margin: auto;
+ }
+
+ .calling {
+     margin: 50px;
+     border-radius: 15px;
+ }
+
+ .revenue-card {
+     position: absolute;
+     width: 35%;
+     top: 150px;
+     right: -200px;
+     background-color: var(--color-light);
+     padding: 10px 30px;
+     border-radius: 15px;
+ }
+
+ .revenue-details {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .years-card {
+     position: absolute;
+     width: 35%;
+     left: -40px;
+     bottom: 200px;
+     background-color: var(--color-green);
+     padding: 30px;
+     border-radius: 15px;
+ }
+
+ .line-separator {
+     border-bottom: 2px solid var(--color-text);
+ }
